@@ -68,6 +68,7 @@ Decimal::~Decimal() {
     }
     size = 0;
     capacity = 1;
+    push(0);
 }
 
 Decimal::Decimal(const Decimal& other) : size(other.size), capacity(other.capacity) {
