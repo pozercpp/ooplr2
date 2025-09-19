@@ -68,6 +68,7 @@ Decimal::~Decimal() {
     }
     size = 0;
     capacity = 1;
+    v = (unsigned char *)malloc(sizeof(unsigned char) * capacity);
     push(0);
 }
 
